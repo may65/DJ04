@@ -1,0 +1,10 @@
+   <h1>Film List</h1>
+   <ul>
+       {% for film in films %}
+           <li>
+               <h2>{{ film.title }}</h2>
+               <p>{{ film.description }}</p>
+               <p><strong>Review:</strong> {{ film.review }}</p>
+           </li>
+       {% endfor %}
+   </ul>
